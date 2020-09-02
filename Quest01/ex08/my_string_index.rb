@@ -1,8 +1,8 @@
 def my_string_index(haystack, needle)
     index = haystack.index(needle)
     if index
-      puts index
+      return index
     else 
-      puts "Index not available."
+      return -1
     end
   end

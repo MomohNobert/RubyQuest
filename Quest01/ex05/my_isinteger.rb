@@ -1,7 +1,7 @@
 def my_isinteger(n)
     if n.instance_of? Fixnum
-      puts 1
+      return 1
     else
-      puts 0
+      return 0
     end
   end

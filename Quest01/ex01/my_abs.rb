@@ -1,8 +1,8 @@
 def my_abs(int)
     if int >= 0
-      puts int
+      return int
     else
       absInt = int * -1
-      puts absInt
+      return absInt
     end
 end
