@@ -8,7 +8,7 @@ def my_is_sort(array)
       end
     end
   
-    if array == array.sort or array == array.sort { |a,b| b <=> a}
+    if array == array.sort or array == array.sort { |a,b| b <=> a }
       return true
     else
       return false
