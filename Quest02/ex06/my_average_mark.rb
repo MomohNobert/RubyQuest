@@ -5,9 +5,10 @@ def my_average_mark(classHash)
     classHash.each do |name, score|
       if !score
         puts "#{name} doesn't have a score"
-        return
+        next
       elsif !score.instance_of? Fixnum
         puts "#{name.capitalize}'s score is wrongly inputed."
+        next
       else 
         classTotalScore += score
         classTotalNumber += 1
