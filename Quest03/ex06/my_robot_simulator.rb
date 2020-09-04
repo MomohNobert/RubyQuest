@@ -1,59 +1,24 @@
 def run_robot(instructions)
-    initial_state = {x: 0, y: 0, bearing: :north}
-  
-    possible_actions = instructions.downcase.split("")
-  
-    possible_actions.map do |p|
-      if p == "l"
-        if initial_state[:bearing] == :north
-          initial_state[:bearing] = :west
-          next
-        elsif initial_state[:bearing] == :east
-          initial_state[:bearing] = :north
-          next
-        elsif initial_state[:bearing] == :south
-          initial_state[:bearing] = :east
-          next
-        else
-          initial_state[:bearing] = :south
-          next
-        end
-  
-      elsif p == "r"
-        if initial_state[:bearing] == :north
-          initial_state[:bearing] = :east
-          next
-        elsif initial_state[:bearing] == :east
-          initial_state[:bearing] = :south
-          next
-        elsif initial_state[:bearing] == :south
-          initial_state[:bearing] = :west
-          next
-        else
-          initial_state[:bearing] = :north
-          next
-        end
-  
-      elsif p == "a"
-        if initial_state[:bearing] == :north
-          initial_state[:y] += 1
-          next
-        elsif initial_state[:bearing] == :east
-          initial_state[:x] += 1
-          next
-        elsif initial_state[:bearing] == :south
-          initial_state[:y] -= 1
-          next
-        else
-          initial_state[:x] -= 1
-          next
-        end
-  
-      else
-        puts "Wrong directions have been fed in. Check your input." 
-        return
-      end
+  bearing = [:north, :east, :south, :west]
+  initial_state = {x: 0, y: 0, bearing: :north}
+  possible_actions = instructions.downcase.split("")
+  possible_actions.map do |p|
+    if p == "l"
+      bearing.rotate!(-1)      
+    elsif p == "r"
+      bearing.rotate!(1)
+    else
+      bearing[0] == :north ? initial_state[:y] += 1 : initial_state[:y]
+      bearing[0] == :east ? initial_state[:x] += 1 : initial_state[:x]
+      bearing[0] == :south ? initial_state[:y] -= 1 : initial_state[:y]
+      bearing[0] == :west ? initial_state[:x] -= 1 : initial_state[:x]
     end
-  
-    return initial_state
- end
+  end
+  initial_state[:bearing] = bearing[0]
+  return initial_state
+end
+
+puts run_robot("raalall")
+puts run_robot("aaaa")
+puts run_robot("raara")
+puts run_robot("")

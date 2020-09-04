@@ -1,13 +1,4 @@
 def my_sort(array, order)
-    array.map do |a|
-      if a.instance_of? Fixnum
-        next
-      else
-        puts "#{a} is not an Integer. Check your inputs."
-        return
-      end
-    end
-  
     if order == :asc
       array = array.sort
       return array
