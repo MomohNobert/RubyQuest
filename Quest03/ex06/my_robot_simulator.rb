@@ -8,10 +8,10 @@ def run_robot(instructions)
     elsif p == "r"
       bearing.rotate!(1)
     else
-      bearing[0] == :north ? initial_state[:y] += 1 : initial_state[:y]
-      bearing[0] == :east ? initial_state[:x] += 1 : initial_state[:x]
-      bearing[0] == :south ? initial_state[:y] -= 1 : initial_state[:y]
-      bearing[0] == :west ? initial_state[:x] -= 1 : initial_state[:x]
+      initial_state[:y] += 1 if bearing[0] == :north
+      initial_state[:x] += 1 if bearing[0] == :east
+      initial_state[:y] -= 1 if bearing[0] == :south
+      initial_state[:x] -= 1 if bearing[0] == :west
     end
   end
   initial_state[:bearing] = bearing[0]
