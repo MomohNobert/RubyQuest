@@ -1,7 +1,7 @@
 def my_csv_parser(filename, seperator)
     data_array = []
     File.foreach(filename) do |line| 
-        data_array << line.split(seperator)
+        data_array << line.strip.split(seperator)
     end
     return data_array
 end
