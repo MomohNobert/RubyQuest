@@ -49,26 +49,28 @@ class MyFirstSelectWithJoin
       @hash_2_database << hash
     end
 
+    hash_1 = {}
     @@hash_database.map do |h|
       if h["Player"] == column_name
-        @player_data << h
+        hash_1 =  h
         break
       else 
         nil
       end
     end
 
+    hash_2 = {}
     @hash_2_database.map do |h|
       print h["player"]
       if h["name"] == column_name
-        @player_data << h
+        hash_2 = h
         break
       else 
         nil
       end
     end
 
-    return @player_data
+    return hash_1.merge(hash_2)
   end
 
 
