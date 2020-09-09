@@ -1,11 +1,13 @@
 require 'readline'
 
 while line = Readline.readline('> ', true)
+
   split_line = line.split()
-  if split_line[0].downcase == "exit"
+
+  if split_line.first == "exit"
     print "Goodbye!"
     exit
-  else
-    print split_line
   end
+  print split_line
+  print "\n"
 end
