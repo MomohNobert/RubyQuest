@@ -5,7 +5,7 @@ class MyFirstSelect
     @column_array = []
     @hash_database = []
 
-    file = CSV.read "data.csv"
+    file = CSV.read "nba_player_data.csv"
 
     file[0].map do |f|
       @column_array << f
