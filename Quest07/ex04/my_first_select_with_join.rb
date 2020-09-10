@@ -30,10 +30,11 @@ class MyFirstSelectWithJoin
     end
   end
 
-  def join(column_name, filename)
+  def join(column_name_a, filename, column_name_b)
     @column_2_array = []
     @hash_2_database = []
     @player_data = []
+    @merged_array = []
 
     file = CSV.read filename
 
@@ -49,28 +50,19 @@ class MyFirstSelectWithJoin
       @hash_2_database << hash
     end
 
-    hash_1 = {}
     @@hash_database.map do |h|
-      if h["Player"] == column_name
-        hash_1 =  h
-        break
-      else 
-        nil
+      @hash_2_database.map do |w|
+        if h["Player"] == w["name"]
+          hash = h.merge(w)
+          @merged_array << hash
+        else
+          nil
+        end
       end
     end
 
-    hash_2 = {}
-    @hash_2_database.map do |h|
-      print h["player"]
-      if h["name"] == column_name
-        hash_2 = h
-        break
-      else 
-        nil
-      end
-    end
+    return @merged_array
 
-    return hash_1.merge(hash_2)
   end
 
 
@@ -79,4 +71,4 @@ end
 
 hello = MyFirstSelectWithJoin.new("nba_players.csv")
 # print hello.where("name", "Alaa Adbelnaby")
-print hello.join("Curly Armstrong", "nba_player_data.csv")
+print hello.join("Player", "nba_player_data.csv", "name").take(10)
