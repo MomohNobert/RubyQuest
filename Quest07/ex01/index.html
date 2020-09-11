@@ -28,7 +28,7 @@
 
   <div class="nav-scroller py-1 mb-2 dark-blue">
     <nav class="nav d-flex justify-content-between container">
-      <a class="p-2 text-light" href="#">towards data science</a>
+      <img alt="Towards Data Science" class="" src="https://miro.medium.com/max/200/1*mG6i4Bh_LgixUYXJgQpYsg@2x.png" width="100" height="36">
       <a class="p-2 text-light" href="#">DATA SCIENCE</a>
       <a class="p-2 text-light" href="#">MACHINE LEARNING</a>
       <a class="p-2 text-light" href="#">PROGRAMMING</a>
@@ -48,9 +48,195 @@
       <h1 class="pb-4 mb-4 mt-4 border-bottom col align-self-center">
         10 Common Software Architectural Patterns in a nutshell
       </h1>
+      <div class="author">
+        <img src="author-pic.jpeg">
+        <div class="details">
+          <div class="author-details">
+            <p>Vijini Mallawaarachchi</p>
+            <p class="follow">Follow</p>
+          </div>
+          <div class="author-details">
+            <p>Sep 4, 2017</p>
+            <span>·</span>
+            <p>5 min read &#9733;</p>
+          </div>
+        </div>
+      </div>
 
       <div class="blog-post">
-
+        <div>
+          <p>Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have to choose a suitable architecture that will provide us with the desired functionality and quality attributes. Hence, we should understand different architectures, before applying them to our design.</p>
+          <img  src="arc-pattern.png">
+        </div>
+        <div>
+          <h3>What is an Architectural Pattern?</h3>
+          <p>According to Wikipedia,</p>
+          <span>An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are similar to software design pattern but have a broader scope.</span>
+          <p>In this article, I will be briefly explaining the following 10 common architectural patterns with their usage, pros and cons.</p>
+          <ol>
+            <li>Layered pattern</li>
+            <li>Client-server pattern</li>
+            <li>Master-slave pattern</li>
+            <li>Pipe-filter pattern</li>
+            <li>Broker pattern</li>
+            <li>Peer-to-peer pattern</li>
+            <li>Event-bus pattern</li>
+            <li>Model-view-controller pattern</li>
+            <li>Blackboard pattern</li>
+            <li>Interpreter pattern.</li>
+          </ol>
+          </p>
+        </div>
+        <div>
+          <h2>1. Layered Pattern</h2>
+          <p>This pattern can be used to structure programs that can be decomposed into groups of subtasks, each of which is at a particular level of abstraction. Each layer provides services to the next higher layer.</p>
+          <p>The most commonly found 4 layers of a general information system are as follows.</p>
+          <ul>
+            <li>Presentation layer (also known as UI layer)</li>
+            <li>Application layer (also known as service layer)</li>
+            <li>Business logic layer (also known as domain layer)</li>
+            <li>Data access layer (also known as persistence layer)</li>
+          </ul>
+          <h3>Usage</h3>
+          <ul>
+            <li>General desktop applications.</li>
+            <li>E-Commerce web applications.</li>
+          </ul>
+          <img src="layer-usage.png">
+        </div>
+        <div>
+          <h2>2. Client-server pattern</h2>
+          <p>This pattern consists of two parties; a server and multiple clients. The server component will provide services to multiple client components. Clients request services from the server and the server provides relevant services to those clients. Furthermore, the server continues to listen to client requests.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Online applications such as email, document sharing and banking.</li>
+          </ul>
+          <img src="client-server.png">
+        </div>
+        <div>
+          <h2>3. Master-slave pattern</h2>
+          <p>This pattern consists of two parties; master and slaves. The master component distributes the work among identical slave components, and computes a final result from the results which the slaves return.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>In database replication, the master database is regarded as the authoritative source, and the slave databases are synchronized to it.</li>
+            <li>Peripherals connected to a bus in a computer system (master and slave drives).</li>
+          </ul>
+          <img src="master-slave.png">
+        </div>
+        <div>
+          <h2>4. Pipe-filter pattern</h2>
+          <p>This pattern can be used to structure systems which produce and process a stream of data. Each processing step is enclosed within a filter component. Data to be processed is passed through pipes. These pipes can be used for buffering or for synchronization purposes.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.</li>
+            <li>Workflows in bioinformatics.</li>
+          </ul>
+          <img src="source-pipe.png">
+        </div>
+        <div>
+          <h2>5. Broker pattern</h2>
+          <p>This pattern is used to structure distributed systems with decoupled components. These components can interact with each other by remote service invocations. A broker component is responsible for the coordination of communication among components.</p>
+          <p>Servers publish their capabilities (services and characteristics) to a broker. Clients request a service from the broker, and the broker then redirects the client to a suitable service from its registry.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Message broker software such as Apache ActiveMQ, Apache Kafka, RabbitMQ and JBoss Messaging.</li>
+          </ul>
+          <img src="broker.png">
+        </div>
+        <div>
+          <h2>6. Peer-to-peer pattern</h2>
+          <p>In this pattern, individual components are known as peers. Peers may function both as a client, requesting services from other peers, and as a server, providing services to other peers. A peer may act as a client or as a server or as both, and it can change its role dynamically with time.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>File-sharing networks such as Gnutella and G2)</li>
+            <li>Cryptocurrency-based products such as Bitcoin and Blockchain</li>
+            <li></li>
+          </ul>
+          <img src="peer-to-peer.png">
+        </div>
+        <div>
+          <h2>7. Event-bus pattern</h2>
+          <p>This pattern primarily deals with events and has 4 major components; event source, event listener, channel and event bus. Sources publish messages to particular channels on an event bus. Listeners subscribe to particular channels. Listeners are notified of messages that are published to a channel to which they have subscribed before.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Android development</li>
+            <li>Notification services</li>
+          </ul>
+          <img src="event-bus.png">
+        </div>
+        <div>
+          <h2>8. Model-view-controller pattern</h2>
+          <p>This pattern, also known as MVC pattern, divides an interactive application in to 3 parts as,</p>
+          <ol>
+            <li>model — contains the core functionality and data</li>
+            <li>Aview — displays the information to the user (more than one view may be defined)</li>
+            <li>controller — handles the input from the user</li>
+          </ol>
+          <p>This is done to separate internal representations of information from the ways information is presented to, and accepted from, the user. It decouples components and allows efficient code reuse.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Architecture for World Wide Web applications in major programming languages.</li>
+            <li>Web frameworks such as Django and Rails.</li>
+          </ul>
+          <img src="mvc.png">
+        </div>
+        <div>
+          <h2>9. Blackboard pattern</h2>
+          <p>This pattern is useful for problems for which no deterministic solution strategies are known. The blackboard pattern consists of 3 main components.</p>
+          <ul>
+            <li>blackboard — a structured global memory containing objects from the solution space</li>
+            <li>knowledge source — specialized modules with their own representation</li>
+            <li>control component — selects, configures and executes modules.</li>
+          </ul>
+          <p>All the components have access to the blackboard. Components may produce new data objects that are added to the blackboard. Components look for particular kinds of data on the blackboard, and may find these by pattern matching with the existing knowledge source.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Speech recognition</li>
+            <li>Vehicle identification and tracking</li>
+            <li>Protein structure identification</li>
+            <li>Sonar signals interpretation.</li>
+          </ul>
+          <img src="blackboard.png">
+        </div>
+        <div>
+          <h2>10. Interpreter pattern</h2>
+          <p>This pattern is used for designing a component that interprets programs written in a dedicated language. It mainly specifies how to evaluate lines of programs, known as sentences or expressions written in a particular language. The basic idea is to have a class for each symbol of the language.</p>
+          <h3>Usage</h3>
+          <ul>
+            <li>Database query languages such as SQL.</li>
+            <li>Languages used to describe communication protocols.</li>
+          </ul>
+          <img src="interpreter.png">
+        </div>
+        <div>
+          <h2>Comparison of Architectural Patterns.</h2>
+          <p>The table given below summarizes the pros and cons of each architectural pattern.</p>
+          <img src="arc-pattern.png">
+          <span>Comparison of Architectural Patterns</span>
+        </div>
+        <br>
+        <br>
+        <div>
+          <span>
+            Hope you found this article useful. I would love to hear your thoughts. 😇
+          </span>
+          <br>
+          <br>
+          <span>
+            Thanks for reading. 😊
+          </span>
+          <br>
+          <br>
+          <span>
+            Cheers! 😃
+          </span>
+          <br>
+          <br>
+          <h3>References</h3>
+          <a to="https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
+          ">https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
+          </a>
+        </div>
       </div>
 
 
