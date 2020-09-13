@@ -1,9 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Slabo+27px&display=swap');
 
-* {
+/* * {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Slabo 27px', serif;
+} */
+
+h1 {
+    font-family: 'Arvo', serif; 
+    font-size: 55px;
+}
+
+.text-grey {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.5s linear;
+    padding: 5px;
+} 
+
+.text-grey:hover {
+    color: rgba(255,255,255,1)
 }
 
 .dark-blue {
