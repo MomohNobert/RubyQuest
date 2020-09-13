@@ -40,7 +40,6 @@ h3 {
 
 .blog-post img {
     padding: 10px;
-    width: 100%;
 }
 
 .author {
@@ -128,8 +127,28 @@ li {
     padding: 15px;
 }
 
+.image-div {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-div p {
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
 @media(max-width: 768px) {
     .container {
         width: 100vw;
+    }
+
+    .hidden {
+        display: none;
     }
 }
