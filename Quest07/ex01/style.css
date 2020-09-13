@@ -11,6 +11,16 @@ h1 {
     font-size: 55px;
 }
 
+h2 {
+    font-family: 'Arvo', serif; 
+    font-size: 45px;   
+}
+
+h3 {
+    font-family: 'Arvo', serif; 
+    font-size: 35px;   
+}
+
 .text-grey {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
@@ -33,10 +43,12 @@ h1 {
 
 .author {
     display: flex;
-    /* height: 70px; */
+    height: 70px;
     line-height: 0px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 275px;
+    margin-bottom: 55px;
 }
 
 .author-svg {
@@ -44,35 +56,55 @@ h1 {
 }
 
 .author img {
-    height: 52px;
-    width: 52px;
+    height: 65px;
+    width: 65px;
     border-radius: 50%;
-    margin-left: 4px;
+    margin-left: 5px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 70px;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    color: black;
 }
 
 .author-details {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 255px;
+    justify-content: space-between;
 }
 
 .author-details p {
-    font-size: 12.5px;
-    padding: 2.5px;
+    padding: 10px;
 }
+
+.time-details {
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 14px;
+    color: grey;
+}
+
+.time-details span {
+    color: black;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
 
 .follow {
-    border: 0.5px solid black;
+    color: green;
+    border: 0.5px solid green;
+    padding: 10px;
     border-radius: 3px;
-    margin-left: 5px;
-    padding: 2.5px 15px;
 }
 
-ol, ul {
-    width: 90%;
-    margin-left: 25px;
-    font-size: 18px;
-    font-weight: bold;
+.blog-post {
+    font-size: 22px;
 }
 
 @media(max-width: 768px) {
