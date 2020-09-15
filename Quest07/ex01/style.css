@@ -209,11 +209,11 @@ li {
 
 .subtitle {
     font-size: 10px;
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 .tags {
-    padding: 20px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -224,6 +224,41 @@ li {
     background-color: rgba(0,0,0,0.1);
     font-size: 12px;
     border-radius: 2px;
+}
+
+.meta-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.reactions-holder {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.reaction {
+
+}
+
+.reaction span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.social-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
+.social-links:hover {
+    opacity: 1;
 }
 
 @media(max-width: 768px) {
