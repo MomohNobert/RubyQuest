@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Bitter', serif;
-
 }
 
 .container-fluid {
@@ -347,11 +346,58 @@ li {
     font-size: 12px;
 }
 
-@media(max-width: 768px) {
-    .container {
-        width: 100vw;
-    }
+footer {
+    background-color: black;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+}
 
+.blog-footer-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.h-r {
+    border-top: 1px solid white;
+    width: 95%;
+    margin: auto;
+}
+
+.blog-footer-content {
+    width: 27%;
+}
+
+.blog-footer-content p{
+    font-size: 12px;
+}
+
+.blog-footer-content h3{
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.footer-container-links {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px) {
     .hidden {
         display: none;
     }
@@ -378,8 +424,8 @@ li {
 
     .image-div {
         height: 35vh;
-        margin-top: 15px;
-        margin-bottom: 30px;
+        margin-top: 75px;
+        margin-bottom: 75px;
     }
 
     .more-medium-context {
