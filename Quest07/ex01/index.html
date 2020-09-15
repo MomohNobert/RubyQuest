@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="container-fluid">
     <div>
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
+    <header class="blog-header py-3 container">
+      <div class="row flex-nowrap justify-content-between align-items-center container">
         <div class="col-4 pt-1">
           <a class="text-muted" href="#">
-<svg width="35" height="35" viewBox="5 5 35 35" class="ao r"><path d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z"></path></svg>
+            <svg width="35" height="35" viewBox="5 5 35 35" class="ao r"><path d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z"></path></svg>
           </a>
         </div>
-        <div class="col-2 d-flex justify-content-between align-items-center">
-          <a class="text-muted" href="#" aria-label="Search">
+        <div class="col-2 d-flex justify-content-around align-items-center">
+          <a class="text-muted hidden sign-font" href="#" aria-label="Search">
            Sign In
           </a>
-          <a class="btn btn-sm btn-outline-secondary p-2" href="#">Get Started</a>
+          <a class="btn btn-sm btn-outline-secondary p-2 hidden sign-font" href="#">Get Started</a>
         </div>
       </div>
     </header>
 
   <div class="nav-scroller py-1 mb-2 dark-blue p-3 nav-width">
+    <header class="blog-header py-1 container">
     <nav class="nav d-flex justify-content-between nav-font">
       <img alt="Towards Data Science" class="" src="https://miro.medium.com/max/200/1*mG6i4Bh_LgixUYXJgQpYsg@2x.png" width="100" height="36">
       <a class="text-grey hidden" href="#">DATA SCIENCE</a>
@@ -42,9 +43,9 @@
   </div>
 </div>
 
-<main role="main" class="container">
-  <div class="row">
-    <div class="col-md-8 blog-main mx-auto">
+<main role="main container">
+  <div>
+    <div class="col-md-8 blog-main mx-auto align-self-center">
       <h1 class="pb-4 mb-4 mt-4 border-bottom col align-self-center">
         10 Common Software Architectural Patterns in a nutshell
       </h1>
@@ -62,10 +63,12 @@
         </div>
       </div>
 
-      <div class="blog-post">
+      <div class="blog-post ">
         <div>
           <p>Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have to choose a suitable architecture that will provide us with the desired functionality and quality attributes. Hence, we should understand different architectures, before applying them to our design.</p>
-          <img  src="./assets/arc-pattern.png">
+          <div class="image-div">
+            <img  src="./assets/arc-pattern.png">
+          </div> 
         </div>
         <div>
           <h2>What is an Architectural Pattern?</h3>
@@ -251,8 +254,11 @@
         <div>
           <h2>Comparison of Architectural Patterns.</h2>
           <p>The table given below summarizes the pros and cons of each architectural pattern.</p>
-          <img src="./assets/arc-pattern.png">
-          <span>Comparison of Architectural Patterns</span>
+          <div class="image-div">
+            <img class="final-img" src="./assets/arc-pat.png">
+            <p>Comparison of Architectural Patterns</p>
+          </div>
+
         </div>
         <br>
         <br>
@@ -273,8 +279,8 @@
           <br>
           <br>
           <h3>References</h3>
-          <a to="https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
-          ">https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
+          <!-- <a class="container" to="https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
+          ">https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6 -->
           </a>
         </div>
       </div>

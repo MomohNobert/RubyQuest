@@ -2,6 +2,12 @@
 
 * {
     font-family: 'Bitter', serif;
+
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 h1 {
@@ -11,14 +17,14 @@ h1 {
 
 h2 {
     font-family: 'Arvo', serif; 
-    font-size: 45px; 
+    font-size: 35px; 
     margin-top: 50px;   
     margin-bottom: 20px;  
 }
 
 h3 {
     font-family: 'Arvo', serif; 
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 50px;   
     margin-bottom: 20px;
 }
@@ -36,10 +42,6 @@ h3 {
 
 .dark-blue {
     background-color: #355876;
-}
-
-.blog-post img {
-    padding: 10px;
 }
 
 .author {
@@ -105,7 +107,7 @@ h3 {
 }
 
 .blog-post {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .bolder {
@@ -134,13 +136,25 @@ li {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.image-div img {
+    max-width: 100%;
 }
 
 .image-div p {
     font-size: 16px;
     color: rgba(0,0,0,0.7);
-    padding-top: 20px;
-    padding-bottom: 60px;
+}
+
+.final-img {
+    margin: auto;
+}
+.sign-font {
+    min-width: 100px;
+    margin-right: 5px;
 }
 
 @media(max-width: 768px) {
@@ -150,5 +164,31 @@ li {
 
     .hidden {
         display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 25px; 
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    .blog-post {
+        font-size: 15px;
+    }
+
+    .image-div {
+        height: 35vh;
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
 }
