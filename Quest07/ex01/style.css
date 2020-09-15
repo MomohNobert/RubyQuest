@@ -402,6 +402,11 @@ footer {
         display: none;
     }
 
+    .add-width {
+        width: 85vw;
+        margin: auto;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -431,7 +436,12 @@ footer {
     .more-medium-context {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
+    }
+
+    .end-credits {
+        width: 90%;
+        margin-left: 5%;
     }
 }
