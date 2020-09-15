@@ -314,6 +314,39 @@ li {
     border-radius: 3px;
 }
 
+.end-credits {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.more-medium {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-medium-context {
+    display: flex;
+    width: 25%;
+}
+
+.medium-content {
+    width: 60%;
+}
+
+.medium-content-p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.more-medium-context img {
+    height: 70px;
+    width: 70px;
+}
+
+.medium-small {
+    font-size: 12px;
+}
+
 @media(max-width: 768px) {
     .container {
         width: 100vw;
@@ -347,5 +380,12 @@ li {
         height: 35vh;
         margin-top: 15px;
         margin-bottom: 30px;
+    }
+
+    .more-medium-context {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
     }
 }
