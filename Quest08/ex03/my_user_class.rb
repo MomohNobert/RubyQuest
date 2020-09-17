@@ -1,4 +1,4 @@
-cclass User
+class User
 # Initializing the class instance variables and update the next available ID
 def initialize
     @user = Hash.new
