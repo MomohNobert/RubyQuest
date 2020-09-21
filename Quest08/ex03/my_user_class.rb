@@ -134,5 +134,9 @@ class User
     end
 end
 instance_user = User.new
-p instance_user.create("Momoh, Nobert, 24, 1234, okhai0112@gmail.com")
+p instance_user.create("Momoh, Nobert, 2, 1234, okhai0112@gmail.com")
+p instance_user.create("Momoh, Nobert, 2, 1234, okhai0112@gmail.com")
+p instance_user.create("Momoh, Nobert, 2, 1234, okhai0112@gmail.com")
+p instance_user.create("Momoh, Nobert, 2, 1234, okhai0112@gmail.com")
+p instance_user.create("Momoh, Nobert, 2, 1234, okhai0112@gmail.com")
 p instance_user.destroy(1)
