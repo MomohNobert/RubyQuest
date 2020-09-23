@@ -1,4 +1,3 @@
 def my_size(str)
-    size = str.length
-    return size
-  end
+  return str.length
+end

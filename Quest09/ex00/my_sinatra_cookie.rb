@@ -8,7 +8,7 @@ get '/' do
     elsif action == "get"
         cookies[:name]
     elsif action == "del"
-        cookies[:name] = nil
+        cookies.delete(name)
     else 
         "Welcome to HomePage, Do an action."
     end

@@ -15,4 +15,3 @@ def my_cat argv
     end
     return file_data
 end
-puts my_cat ARGV
