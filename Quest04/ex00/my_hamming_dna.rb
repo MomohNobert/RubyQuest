@@ -1,5 +1,5 @@
 def my_hamming_dna(dna1, dna2)
-    dna1.length == dna2.length ? nil : (puts "These strings aren't of equal length empty."; return;)
+    dna1.length == dna2.length ? nil : ( return -1;)
 
     counter = 0
     (0..dna1.length).each do |i|
@@ -8,4 +8,4 @@ def my_hamming_dna(dna1, dna2)
     return counter
 end
 
-print my_hamming_dna("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT")
+print my_hamming_dna("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCT")

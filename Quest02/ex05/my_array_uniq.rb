@@ -1,11 +1,5 @@
 def my_array_uniq(numberArray)
-    newNumberArray = []
-    numberArray.map do |n|
-      if newNumberArray.include? n
-        next
-      else
-        newNumberArray.push(n)
-      end
-    end
-    return newNumberArray
+  return numberArray | numberArray
 end
+
+print my_array_uniq [1, 1, 1, 2, 3, 4, 1]
